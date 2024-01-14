@@ -1,0 +1,902 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دلفین وست</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="dist/images/dolfinvest-logo-200x200.png"
+    />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ef6e277a59.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body dir="rtl" class="bg-white">
+    <!--Header Section-->
+    <header class="container">
+      <div class="bg-white py-8">
+        <nav class="flex lg:inline-flex">
+          <div class="flex">
+            <button class="hamburger lg:hidden">
+              <div class="bar"></div>
+            </button>
+          </div>
+          <img
+            class="h-10 w-10 mx-auto cursor-pointer"
+            src="dist/images/dolfinvest-logo-200x200.png"
+            alt="dolfinvest-image"
+          />
+          <ul class="lg:flex space-x-10 space-x-reverse py-2 hidden">
+            <li>
+              <a href="#" class="mr-3 hover:text-blue-900 transition-all"
+                >دلفین وست</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-900 transition-all">دوره ها</a>
+              <ul
+                id="submenu"
+                class="absolute mt-4 bg-white p-2 w-auto grid grid-cols-2 lead border-gray-200 border-2 rounded-xl cursor-pointer transition-all text-center opacity-0"
+              >
+                <li class="hover:text-blue-700">تریدر شو</li>
+                <li class="hover:text-blue-700">NFT 20 + 1</li>
+                <li class="hover:text-blue-700">
+                  معامله گری به سبک پرایس اکشن
+                </li>
+                <li class="hover:text-blue-700">تفکر فاندامنتال</li>
+                <li class="hover:text-blue-700">سرمایه گذاری در طلای رویال</li>
+                <li class="hover:text-blue-700">افزایش سرمایه کاربردی</li>
+                <li class="hover:text-blue-700">آموزش تابلوخوانی کوسه شو</li>
+                <li class="hover:text-blue-700">سه گانه سرمایه گذاری</li>
+                <li class="hover:text-blue-700">کپسول معامله گری</li>
+                <li class="hover:text-blue-700">دوره بک تست گیری کلید</li>
+                <li class="hover:text-blue-700">بورس به زبان ساده</li>
+                <li class="hover:text-blue-700">پیش بینی قیمت دلار</li>
+                <li class="hover:text-blue-700">فارکس جونیور</li>
+                <li class="hover:text-blue-700">رازهای آنچین</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-900 transition-all"
+                >تحلیل بازارهای مالی</a
+              >
+              <ul
+                id="submenu"
+                class="absolute mt-4 bg-white p-2 w-auto lead border-gray-200 border-2 rounded-xl cursor-pointer transition-all text-center opacity-0"
+              >
+                <li class="hover:text-blue-700">تحلیل شاخص کل بورس</li>
+                <li class="hover:text-blue-700">پیش بینی قیمت طلا</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-900 transition-all"
+                >آموزش ها</a
+              >
+              <ul
+                id="submenu"
+                class="absolute mt-4 bg-white p-2 w-96 lead border-gray-200 border-2 rounded-xl cursor-pointer transition-all opacity-0"
+              >
+                <li class="inline-block hover:text-blue-700">
+                  آموزش تحلیل تکنیکال
+                </li>
+                <li class="inline-block float-end ml-4 hover:text-blue-700">
+                  آموزش امواج الیوت
+                </li>
+                <li class="hover:text-blue-700">آموزش ارز دیجیتال</li>
+                <li class="hover:text-blue-700">آموزش فارکس</li>
+                <li class="hover:text-blue-700">آموزش بورس</li>
+                <li class="hover:text-blue-700">سرمایه گذاری در طلا</li>
+                <li class="hover:text-blue-700">کندل شناسی</li>
+                <li class="hover:text-blue-700">آموزش پرایس اکشن</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-900 transition-all"
+                >درباره ما</a
+              >
+            </li>
+          </ul>
+          <div class="flex my-auto lg:hidden">
+            <i class="fa-solid fa-magnifying-glass ml-4"></i>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </nav>
+        <div
+          class="hidden float-left space-x-4 space-x-reverse lg:inline-block lg:visible"
+        >
+          <div
+            class="inline-block border-neutral-200 border-2 rounded-full p-1 focus-within:border-blue-800 border-3 transition-all"
+          >
+            <input type="text" placeholder="جستجو" class="focus:outline-none" />
+          </div>
+          <button
+            class="text-white text-sm font-bold bg-cyan-600 rounded-full p-2 w-24 hover:bg-cyan-500 transition-all"
+          >
+            ناحیه کاربری
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav class="mobile-nav transition-all rounded-2xl">
+      <div>
+        <div class="hover:text-blue-700">دلفین وست</div>
+        <hr />
+        <div class="hover:text-blue-700">دوره ها</div>
+        <hr />
+        <div class="hover:text-blue-700">تحلیل بازارهای مالی</div>
+        <hr />
+        <div class="hover:text-blue-700">آموزش ها</div>
+        <hr />
+        <div class="hover:text-blue-700">درباره ما</div>
+      </div>
+    </nav>
+    <!--Main Section-->
+    <main>
+      <div aria-label="Newest Photos">
+        <div class="carousel container w-full" data-carousel>
+          <button
+            class="carousel-button prev -mt-60 md:-mt-40 lg:-mt-32"
+            data-carousel-button="prev"
+          >
+            &#8250;
+          </button>
+          <button
+            class="carousel-button next -mt-60 md:-mt-40 lg:-mt-32"
+            data-carousel-button="next"
+          >
+            &#8249;
+          </button>
+          <ul class="container mb-8" data-slides>
+            <li class="slide" data-active>
+              <img
+                class="rounded-3xl"
+                src="dist/images/banner2.webp"
+                alt="خرید گوشی"
+              />
+            </li>
+            <li class="slide">
+              <img
+                class="rounded-3xl"
+                src="dist/images/price-list-banner.webp"
+                alt="خرید گوشی"
+              />
+            </li>
+          </ul>
+        </div>
+        <!--pictures-->
+      </div>
+      <div class="container">
+        <h2
+          class="text-blue-800 text-center text-3xl font-semibold -mt-96 md:-mt-80 lg:-mt-52"
+        >
+          مسیرهای آموزشی دلفین وست
+        </h2>
+        <div class="grid grid-cols-2 md:flex mt-8">
+          <a href="#"
+            ><div><img src="dist/images/تکنیکال.webp" alt="تکنیکال" /></div
+          ></a>
+          <a href="#"
+            ><div><img src="dist/images/فارکس.webp" alt="فارکس" /></div
+          ></a>
+          <a href="#"
+            ><div><img src="dist/images/ارز.webp" alt="ارز" /></div
+          ></a>
+          <a href="#"
+            ><div><img src="dist/images/بورس.webp" alt="بورس" /></div
+          ></a>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-blue-900 text-center text-3xl font-semibold">
+          دوره های آموزشی دلفین وست
+        </h2>
+        <div class="flex space-x-6 space-x-reverse mt-6 overflow-x-auto">
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-50 slider-width slider-height leading-8 text-neutral-500 rounded-3xl"
+          >
+            <div class="mx-6">
+              <div class="w-64 h-64 pt-4">
+                <img
+                  class="rounded-3xl"
+                  src="dist/images/پوستر-فارکس-جونیور-02.png"
+                  alt="پوستز فارکس جونیور"
+                />
+              </div>
+              <div class="text-blue-800 font-bold mt-6 cursor-pointer">
+                فارکس جونیور
+              </div>
+              <div>
+                <p>
+                  دوره فارکس جونیور به شما کمک می کند تا بازار فارکس را از صفر
+                  به صورت قدم به قدم آموزش ببینید.
+                </p>
+              </div>
+              <hr class="border-neutral-500" />
+              <div>
+                <p class="inline-block mt-3">۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                  class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-1 mt-2 cursor-pointer transition-all float-left"
+                >
+                  مشاهده دوره
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex mt-6">
+        <button
+          class="border-cyan-600 border-2 p-2 rounded text-cyan-600 mx-auto"
+        >
+          مشاهده تمامی دوره ها
+        </button>
+      </div>
+      <div class="container">
+        <br /><br /><br /><br /><br /><br />
+        <h2 class="text-blue-900 text-center text-3xl font-bold">
+          چرا باید دلفین وست را انتخاب کنید؟
+        </h2>
+        <p class="text-neutral-500 text-center mt-4">
+          اعداد به شما دروغ نمی گویند
+        </p>
+        <div
+          class="max grid grid-cols-2 md:flex space-x-6 space-x-reverse mt-6 text-center text-xl leading-10 font-semibold text-white"
+        >
+          <div
+            class="bg-yellow-400 md:w-72 md:h-72 rounded-3xl mr-6 md:my-0 my-6 md:mr-0"
+          >
+            <div class="mt-4 p-12 md:p-0 md:mt-24">
+              <div>12</div>
+              <div>دوره آموزشی</div>
+            </div>
+          </div>
+          <div class="bg-blue-900 md:w-72 md:h-72 rounded-3xl md:my-0 my-6">
+            <div class="mt-4 p-12 md:p-0 md:mt-24">
+              <div>500</div>
+              <div>محتوای تخصصی</div>
+            </div>
+          </div>
+          <div class="bg-red-600 md:w-72 md:h-72 rounded-3xl">
+            <div class="mt-4 p-12 md:p-0 md:mt-24">
+              <div>8000</div>
+              <div>دانشجو</div>
+            </div>
+          </div>
+          <div class="bg-sky-500 md:w-72 md:h-72 rounded-3xl">
+            <div class="mt-4 p-12 md:p-0 md:mt-24">
+              <div>600</div>
+              <div>مشاوره موفق</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="back-cover w-full h-auto p-4">
+        <br />
+        <div class="container">
+          <div class="my-6">
+            <h3
+              class="text-yellow-400 font-bold text-2xl"
+              style="font-family: tahoma"
+            >
+              <strong>دوره جامع تریدر شو</strong>
+            </h3>
+            <p class="text-white leading-10">
+              <strong class="text-lg"
+                >کامل‌ترین دوره آموزش ترید و سرمایه گذاری در بازارهای
+                مالی</strong
+              >
+              <br />
+              دوره جامع تریدر شو، یکی از کامل‌ترین دوره‌های آموزشی در زمینه
+              سرمایه‌گذاری در بازارهای مالی است که توسط دلفین‌وست ارائه می‌شود.
+              هدف از این دوره، آموزش سرمایه‌گذاری در سه بازار مهم بورس، فارکس و
+              ارز دیجیتال است. به دلیل بازدهی بالا و سوددهی کلان این بازارها،
+              انتخاب بسیار مناسبی برای یادگیری به شمار می‌روند.
+            </p>
+          </div>
+          <div class="float-right lg:float-left ml-12 md:flex">
+            <img
+              style="height: 33rem"
+              src="dist/images/سکشن-تریدرشو-وب.webp"
+              alt="تریدرشو وب"
+            />
+          </div>
+          <div class="lg:w-1/2 w-full md:inline-block inline-block">
+            <div
+              class="text-yellow-400 font-bold text-xl mt-4"
+              style="font-family: tahoma"
+            >
+              <i class="fa-solid fa-user-secret"></i>
+              ۳ پشتیبان اختصاصی
+            </div>
+            <div class="text-white leading-9">
+              در دوره تریدر شو برای هر دانشجو، 3 پشتیبان اختصاصی (آموزشی،
+              روانشناس و فنی) در نظر گرفته شده است که در طول دوره به طور پیوسته
+              با پشتیبان‌ها در ارتباط هستند.
+            </div>
+            <hr class="my-4" />
+            <div>
+              <div
+                class="text-yellow-400 font-bold text-xl"
+                style="font-family: tahoma"
+              >
+                <i class="fa-solid fa-user-secret"></i>
+                رسیدن به استراتژی شخصی
+              </div>
+              <div class="text-white leading-9">
+                در دوره تریدر شو علاوه‌ بر آموزش جامع انواع استراتژی‌ های
+                معاملاتی، تا رسیدن به استراتژی شخصی در کنار شما هستیم.
+              </div>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <div
+                class="text-yellow-400 font-bold text-xl"
+                style="font-family: tahoma"
+              >
+                <i class="fa-solid fa-user-secret"></i>
+                لایو ترید بعد از اتمام دوره
+              </div>
+              <div class="text-white leading-9">
+                حتی اگر مدت زمان آموزش شما به اتمام برسد، اما ارتباط ما با شما
+                قطع نخواهد شد و حتی پس از اتمام دوره، جلسات لایو ترید اختصاصی
+                دانشجویان تریدر شو برگزار می‌گردد.
+              </div>
+              <hr class="my-4" />
+            </div>
+            <div>
+              <div
+                class="text-yellow-400 font-bold text-xl"
+                style="font-family: tahoma"
+              >
+                <i class="fa-solid fa-user-secret"></i>
+                جلسات حل تمرین
+              </div>
+              <div class="text-white leading-9">
+                یک آموزش درست و اصولی نیازمند حل تمرین و رفع اشکال است. در دوره
+                تریدر شو هر سه هفته یکبار به‌صورت آنلاین جلسات حل تمرین و رفع
+                اشکال توسط استاد دوره برگزار می‌گردد.
+              </div>
+              <hr class="my-4" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center space-x-6 space-x-reverse my-10">
+          <button
+            class="text-white bg-cyan-600 hover:bg-cyan-500 rounded p-2 cursor-pointer transition-all"
+          >
+            مشاهده دوره
+          </button>
+          <button
+            class="text-white bg-inherit rounded border-white border-2 border-solid p-2 cursor-pointer"
+          >
+            دریافت مشاوره
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="my-12">
+          <h2 class="text-blue-900 text-2xl font-bold">روانشناسی معامله گری</h2>
+          <p class="text-neutral-500 leading-8">
+            چالش مهم معامله‌گران (تریدرهای) بازارهای جهانی تسلط بر هیجانات و
+            کنترل احساسات است. یکی از راه های غلبه بر احساسات و مدیریت آن گرفتن
+            مشاوره‌های تخصصی روانشناسی است. ما در دلفین‌وست این امکان را فراهم
+            کرده‌ایم که شما عزیزان بتوانید درباره معاملات خود و یا موضوعات دیگر
+            با روانشناسان مجرب ما ارتباط برقرار کنید و مشکلات روانشناختی
+            معاملاتی خود را حل کنید.
+          </p>
+        </div>
+        <div class="lg:float-left float-right ml-28">
+          <img src="dist/images/روانشناسی.png" alt="روانشناسی" />
+        </div>
+        <div class="text-neutral-500 leading-10 inline-block my-6">
+          <h3 class="text-blue-900 text-xl font-bold">
+            رواشناسی معامله گری برای چه کسانی مناسب است؟
+          </h3>
+          <li>
+            افرادی که قصد کنترل احساسات خود در بازارهای های مالی بخصوص فارکس و
+            ارز دیجیتال دارند.
+          </li>
+          <li>افرادی که در اغلب معاملاتشان، حد ضررشان خورده می‌شود.</li>
+          <li>
+            افرادی که بعد از چند وقت متوالی سود خوب، دچار ضرر در معاملات‌شان
+            می‌شوند.
+          </li>
+          <li>افرادی که آرامش کافی در هنگام ترید کردن ندارند.</li>
+          <li>افرادی که میانگین سود معاملات چند روز اخیرشان کاهش یافته است.</li>
+        </div>
+        <button
+          class="bg-cyan-600 text-white text-sm font-semibold p-2 rounded-md hover:bg-cyan-500 transition-all block"
+        >
+          رزرو وقت روانشناسی معامله گری
+        </button>
+      </div>
+      <div class="back-cover w-full my-32 h-auto">
+        <div class="container grid lg:flex">
+          <div
+            class="lg:flex w-full lg:w-fit h-52 mt-20 sm:mb-24 my-0 sm:my-20"
+          >
+            <img
+              class="rounded-xl cursor-pointer mx-auto"
+              src="dist/images/copy-trading-1-768x402.webp"
+              alt="کپی تریدینگ"
+            />
+          </div>
+          <div class="inline-block mt-6 lg:mt-6 md:mt-32 sm:mt-36">
+            <div class="mx-auto lg:mt-9">
+              <div
+                class="grid grid-cols-2 mt-24 sm:-mt-10 md:mt-0 w-fit mx-auto lg:mt-0 lg:flex lg:flex-wrap lg:max-w-lg"
+              >
+                <div class="mx-4 my-auto">
+                  <div class="lg:w-48 cursor-pointer">
+                    <img
+                      class="rounded-xl"
+                      src="dist/images/پراپ-1-300x157.webp"
+                      alt="پراپ"
+                    />
+                  </div>
+                </div>
+                <div class="my-4">
+                  <div class="lg:w-48 cursor-pointer">
+                    <img
+                      class="rounded-xl"
+                      src="dist/images/4-300x157.webp"
+                      alt="فارکس"
+                    />
+                  </div>
+                </div>
+                <div class="mx-4">
+                  <div class="lg:w-48 cursor-pointer">
+                    <img
+                      class="rounded-xl"
+                      src="dist/images/ریسک-فری-300x157.webp"
+                      alt="ریسک فری"
+                    />
+                  </div>
+                </div>
+                <div class="my-auto">
+                  <div class="lg:w-48 cursor-pointer">
+                    <img
+                      class="rounded-xl"
+                      src="dist/images/حساب-پم-300x157.jpg"
+                      alt="حسساب پم"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 lg:max-w-96 my-6">
+            <h2 class="text-yellow-400 text-3xl font-bold">مقالات آموزشی</h2>
+            <p class="text-white text-sm font-bold mt-4 leading-9">
+              مقالات آموزشی و مطالب در بلاگ دلفین‌وست با دسته‌بندی‌های مختلفی
+              برای کاربران آماده شده است. مانند ارزهای دیجیتال و اخبار بازار
+              کریپتو، بورس،‌ طلا و مسکن، روانشناسی معامله‌گری و بسیاری موضوعات
+              دیگر که می‌تواند برای افراد علاقه‌مند به سرمایه‌گذاری در بازارهای
+              مالی مفید و یا دست کم جالب باشد!
+            </p>
+            <button
+              class="text-white bg-cyan-600 rounded p-2 mt-2 hover:bg-cyan-500 transition-all"
+            >
+              مشاهده مقالات
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 mb-36 container">
+        <div class="text-blue-900 text-center font-bold text-2xl">
+          در مسیر آموزش سرمایه گذاری در بازارهای مالی در کنارتان هستیم
+        </div>
+        <div
+          class="block lg:flex lg:space-x-4 lg:space-x-reverse my-6 text-neutral-500"
+        >
+          <div
+            class="lg:w-1/3 h-auto sm:h-36 lg:h-56 border-neutral-400 border-2 rounded-xl lg:mt-6"
+          >
+            <div class="text-blue-900 font-semibold text-xl my-2">
+              <i class="fa-solid fa-bookmark mr-5"></i>
+              قصد یادگیری دارید؟
+            </div>
+            <div class="leading-7 lg:max-w-96 mr-3">
+              موفقیت ما در زندگی نیازمند یادگیری مجموعه‌ای از مهارت‌ها است.
+              سرمایه‌گذاری مهم‌ترین مهارت افراد ثروتمند است. ما در دلفین‌وست در
+              مسیر سرمایه‌گذاری در بازارهای مالی در کنارتان هستیم.
+            </div>
+          </div>
+          <div
+            class="lg:w-1/3 h-auto sm:h-36 lg:h-56 border-neutral-400 border-2 rounded-xl mt-6"
+          >
+            <div class="text-blue-900 font-semibold text-xl my-2">
+              <i class="fa-solid fa-bookmark mr-5"></i>
+              معامله گر هستید؟
+            </div>
+            <div class="leading-7 lg:max-w-96 mr-3">
+              همه ما در تلاش هستیم تا دیدگاه حرفه‌ای‌تری به نمودارها داشته
+              باشیم. یکی از راه‌های حرفه‌ای شدن دیدن حرفه‌ای‌ها است. با
+              تحلیل‌های معامله‌گران دلفین‌وست حرفه‌ای شوید.
+            </div>
+          </div>
+          <div
+            class="lg:w-1/3 h-auto sm::h-56 border-neutral-400 border-2 rounded-xl mt-6"
+          >
+            <div class="text-blue-900 font-semibold text-xl my-2">
+              <i class="fa-solid fa-bookmark mr-5"></i>
+              می خواهید سرمایه گذاری کنید؟
+            </div>
+            <div class="leading-7 mb-4 lg:max-w-96 mr-3">
+              یک سرمایه‌گذار موفق به تخصص و تجربه نیاز دارد. ما در دلفین‌وست
+              برای یک سرمایه‌گذاری موفق پا به پای شما خواهیم بود و همراهیتان
+              می‌کنیم. مشاوران ما در کنار شما هستند تا بهترین سرمایه‌گذاری در
+              بازار های مالی را برای خود رقم بزنید.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer Section-->
+    <footer>
+      <div class="footer-color h-auto lg:h-72 w-full text-white">
+        <div
+          class="lg:flex container lg:space-x-48 lg:space-x-reverse leading-10 font-semibold text-base py-4"
+        >
+          <div>
+            <h4 class="text-center">دسترسی آسان</h4>
+            <hr class="hr-border" />
+            <ul>
+              <li class="hover:text-neutral-400 transition-all">بلاگ</li>
+              <li class="hover:text-neutral-400 transition-all">
+                مسیر یادگیری تحلیل تکنیکال
+              </li>
+              <li class="hover:text-neutral-400 transition-all">
+                مسیر یادگیری فارکس
+              </li>
+              <li class="hover:text-neutral-400 transition-all">
+                مسیر یادگیری بورس
+              </li>
+              <li class="hover:text-neutral-400 transition-all">
+                مسیر یادگیری ارز دیجیتال
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-center">دلفین وست</h4>
+            <hr class="hr-border" />
+            <ul>
+              <li class="hover:text-neutral-400 transition-all">تماس با ما</li>
+              <li class="hover:text-neutral-400 transition-all">درباره ما</li>
+              <li class="hover:text-neutral-400 transition-all">
+                سیاست حریم خصوصی
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-center">ارتباط با دلفین وست</h4>
+            <hr class="hr-border" />
+            <div>
+              <p><i class="fa-solid fa-phone ml-2"></i>02191004455</p>
+              <p>
+                <i class="fa-solid fa-location-dot ml-2"></i>تهران، ونک، گاندی
+                جنوبی (مراجعه با هماهنگی قبلی)
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope ml-2"></i>info@dolfinvest.com
+              </p>
+              <p>
+                دلفین وست در شبکه های اجتماعی:<i
+                  class="fa-brands fa-telegram clear-start mr-2"
+                ></i
+                ><i class="fa-brands fa-instagram mr-2"></i>
+                <i class="fa-brands fa-linkedin mr-2"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white w-full h-16">
+        <div
+          class="mx-auto text-center w-72 mt-4 text-sm font-semibold text-neutral-500"
+        >
+          <p>
+            طراحی و توسعه توسط تیم فنی
+            <a href="#" class="text-blue-700 hover:underline">دلفین وست</a>
+            تمامی حقوق محفوظ است.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
