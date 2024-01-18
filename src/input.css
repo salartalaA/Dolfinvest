@@ -57,7 +57,7 @@ body {
   height: 5px;
   background-color: #000;
   margin: 6px 0px;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .hamburger.is-active:before {
@@ -66,6 +66,11 @@ body {
 
 .hamburger.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.sticky {
+  position: fixed;
+  z-index: 99;
 }
 
 .hamburger.is-active .bar {
@@ -77,7 +82,7 @@ body {
   position: fixed;
   top: 0;
   right: 100%;
-  width: 37%;
+  width: 55%;
   z-index: 98;
   background-color: rgb(255, 252, 247);
 }
@@ -96,7 +101,7 @@ body {
 }
 
 .carousel {
-  height: 40rem;
+  height: 38rem;
   position: relative;
 }
 
@@ -126,7 +131,7 @@ body {
   background: none;
   border: none;
   font-size: 4rem;
-  top: 45%;
+  top: 46%;
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
